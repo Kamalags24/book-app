@@ -1,0 +1,53 @@
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    margin: 2rem auto;
+}
+
+input,
+textarea {
+    display: block;
+    margin-block: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 1px solid;
+}
+
+input[type="submit"] {
+    color: #fff;
+    background: #29a1fd;
+    border: none;
+}
+
+input[type="submit"]:hover {
+    color: #fff;
+    background: #8b4e04;
+    border: none;
+}
+
+.containerbtn {
+    display: flex;
+    justify-content: center;
+    margin-block: 2rem;
+}
+
+.btn {
+    padding: 1rem;
+    color: #ffffff;
+    background-color: #29a1fd;
+    border-radius: 1rem;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.card {
+    box-shadow: 1px 1px 9px #333231;
+    padding: 1rem;
+    width: 600px;
+    margin-inline: auto;
+    margin-block: 2rem;
+    border-radius: 1rem;
+}

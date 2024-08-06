@@ -1,0 +1,16 @@
+<!-- <div class="containerbtn">
+    <button class="btn" (click)="showForm()" *ngIf="!affiche">Save a book</button>
+    <button class="btn" (click)="showForm()" *ngIf="affiche">Hide a form</button>
+</div> -->
+
+<div class="card col-sm-12" *ngIf="affiche">
+    <form action="" method="post">
+        <label for="title">Titre du livre</label>
+        <input type="text" placeholder="Entrer le titre du livre" id="title" />
+        <label for="author">Auteur du livre</label>
+        <input type="text" placeholder="Entrer l'auteur du livre" id="author" />
+        <label for="statut">Statut</label>
+        <input type="text" disabled value="En attente" id="statut" />
+        <input type="submit" value="Enregistrer" />
+    </form>
+</div>

@@ -1,0 +1,11 @@
+<!-- <p>book-header works!</p> -->
+
+<header>
+    <app-book-nav></app-book-nav>
+</header>
+
+
+<div class="containerbtn">
+    <button class="btn" (click)="showForm()" *ngIf="!affiche">Save a book</button>
+    <button class="btn" (click)="showForm()" *ngIf="affiche">Hide a form</button>
+</div>

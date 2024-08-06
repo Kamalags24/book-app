@@ -1,0 +1,21 @@
+<!-- <p>book-list works!</p> -->
+
+<table class="table ">
+    <thead>
+      <tr>
+        <th>Titre</th>
+        <th>Auteur</th>
+        <th>Statut</th>
+      </tr>
+    </thead>
+    <tbody>
+      @for(book of books; track book.id){
+  
+      <tr>
+        <td>{{ book.title }}</td>
+        <td>{{ book.author }}</td>
+        <td>{{ book.statut }}</td>
+      </tr>
+      }
+    </tbody>
+  </table>

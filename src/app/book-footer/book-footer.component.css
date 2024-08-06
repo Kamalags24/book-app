@@ -1,0 +1,25 @@
+.ct-footer {
+    text-align: center;
+    background-color: #adb5bd;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin-top: 10rem;
+}
+
+.inner-left ul {
+    display: flex;
+    justify-content: space-around;
+  
+}
+
+
+.inner-left ul li {
+    list-style: none;
+
+}
+
+a {
+    text-decoration: none;
+}
