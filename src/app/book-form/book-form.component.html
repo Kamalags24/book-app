@@ -4,13 +4,16 @@
 </div> -->
 
 <div class="card col-sm-12" *ngIf="affiche">
-    <form action="" method="post">
+    <form [formGroup]="inputForm" (ngSubmit)>
         <label for="title">Titre du livre</label>
-        <input type="text" placeholder="Entrer le titre du livre" id="title" />
+        <input type="text" placeholder="Entrer le titre du livre" id="title" formControlName="title" />
         <label for="author">Auteur du livre</label>
-        <input type="text" placeholder="Entrer l'auteur du livre" id="author" />
-        <label for="statut">Statut</label>
-        <input type="text" disabled value="En attente" id="statut" />
+        <input type="text" placeholder="Entrer l'auteur du livre" id="author" formControlName="author" />
+        <select class="form-select" aria-label="Default select example" formControlName="statut">
+            <option selected>Statut</option>
+            <option value="1">En attente</option>
+            <option value="2">Terminé</option>
+        </select>
         <input type="submit" value="Enregistrer" />
     </form>
 </div>
